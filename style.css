@@ -1,0 +1,127 @@
+.navbar-container {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+  margin: 24px auto;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 30px -3px rgba(0, 0, 0, 0.3);
+  padding: 0 32px;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.navbar-container ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  height: 40px;
+  margin: 0;
+}
+
+.navbar-container ul li {
+  height: 100%;
+}
+
+.navbar-container .logo a {
+  font-size: 28px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar-container ul a {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 32px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all 400ms ease;
+}
+
+.navbar-container ul a:hover {
+  background: red;
+  color: #fff;
+  border-bottom: 2px solid #000;
+}
+
+.navbar-container .social a {
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar-container .social {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar-container .menu-icon,
+.mobile-menus {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .navbar-container ul a {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar-container ul,
+  .navbar-container .social {
+    display: none;
+  }
+
+  .navbar-container .menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .navbar-container {
+    margin-top: 0;
+    top: 0;
+    height: 40px;
+  }
+
+  .mobile-menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 24px;
+    background: #222;
+    list-style: none;
+    padding: 0;
+    gap: 24px;
+    height: 0px;
+    overflow: hidden;
+    transition: all 400ms ease;
+  }
+
+  .mobile-menus.active {
+    height: 200px;
+    padding: 32px 0;
+  }
+
+  .mobile-menus .social a {
+    font-size: 28px;
+    margin: 0 8px;
+  }
+
+  .mobile-menus a {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+}
