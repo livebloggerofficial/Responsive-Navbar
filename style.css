@@ -1,6 +1,6 @@
 .navbar-container {
   display: flex;
-  max-width: 800px;
+  max-width: 944px;
   justify-content: space-between;
   margin: 24px auto;
   align-items: center;
@@ -10,6 +10,12 @@
   position: fixed;
   left: 0;
   right: 0;
+  z-index:200;
+  background: #fff;
+  top:0;
+}
+body{
+padding-top: 100px;
 }
 
 .navbar-container ul {
