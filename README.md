@@ -11,7 +11,7 @@ A simple and lightweight responsive navigation bar for blogger websites. This pr
 
 
 
-##Installation
+## Installation
 
 - Clone or download the repository to your local machine.
 
